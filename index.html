@@ -9,6 +9,7 @@
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="https://use.fontawesome.com/4e043bd22f.js"></script>
+  <script src="https://unpkg.com/spacingjs" defer></script>
 </head>
 
 <body>
@@ -16,9 +17,11 @@
     <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
       alt="company logo" id="header-img" />
     <nav id="nav-bar">
-      <a href="#features" class="nav-link">Features</a>
-      <a class="nav-link">How It works</a>
-      <a class="nav-link">Pricing</a>
+      <ul>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a class="nav-link">How It works</a></li>
+        <li><a class="nav-link">Pricing</a></li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -58,13 +61,58 @@
         </div>
       </div>
     </section>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?controls=0"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
     <section>
-
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?controls=0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </section>
+    <section>
+      <div class="product_card">
+        <div class="card_header">TENOR TROMBONE</div>
+        <div class="card_info">
+          <h2>$600</h2>
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum dolor.</p>
+          <p>Lorem ipsum.</p>
+        </div>
+        <button type="button" class="card_button">Select</button>
+      </div>
+      <div class="product_card">
+        <div class="card_header">BASS TROMBONE</div>
+        <div class="card_info">
+          <h2>$900</h2>
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum dolor.</p>
+          <p>Lorem ipsum.</p>
+        </div>
+        <button type="button" class="card_button">Select</button>
+      </div>
+      <div class="product_card">
+        <div class="card_header">VALVE TROMBONE</div>
+        <div class="card_info">
+          <h2>$1200</h2>
+          <p>Plays similar to a Trumpet</p>
+          <p>Great for Jazz Bands</p>
+          <p>Lorem ipsum dolor.</p>
+          <p>Lorem ipsum.</p>
+        </div>
+        <button type="button" class="card_button">Select</button>
+      </div>
+    </section>
   </main>
+  <footer>
+    <ul>
+      <li>
+        <a>Privacy</a>
+      </li>
+      <li><a>Terms</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+    <p>Copyright 2016, Original Trombones</p>
+  </footer>
 
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

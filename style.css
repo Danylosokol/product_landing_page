@@ -6,7 +6,7 @@
 
 body{
   font-size: 62.5%;
-  background-color: black;
+  background-color: #EEEEEE;
   box-sizing: border-box;
   width: 100vw;
   min-height: 100vh;
@@ -97,7 +97,7 @@ main{
   }
 }
 
-section{
+section:not(:last-child){
   margin-bottom: 7rem;
 }
 
@@ -225,33 +225,76 @@ h1{
 
 #price{
   display: flex;
-  margin: 0;
-  padding-bottom: 7rem;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .product_card{
   font-size: 1.02rem;
-  border: 1px solid #000;
+  border: 1px solid #DDDDDD;
   width: 18rem;
+  min-width: 15rem;
   text-align: center;
+  border-radius: 2px;
+  margin: 0 1rem 2rem 1rem;
+  box-shadow: 4px 8px 16px hsl(0deg 0% 0% / 0.25);
 }
 
 .card_header{
   background-color: #DDDDDD;
   padding: 1rem 0;
+  font-size: .7rem;
 }
 
 .card_info{
   padding: 1rem 0;
 }
 
+.card_info h3{
+  padding-bottom: 1.75rem;
+  font-size: 1.5rem;
+}
+
+.card_info p:not(:last-child){
+  padding-bottom: .75rem;
+}
+
 .card_button{
   background-color: #F1C40E;
   border: 0px;
   font-size: 1.25rem;
+  font-weight: 100;
+  margin: 1rem 0 1rem 0;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 2px;
+  transition: background-color 1.25s;
+}
+
+.card_button:hover{
+  background-color: #FF8C00;
 }
 
 footer{
   background-color: #DDDDDD;
+  width:65rem;
+  margin: 0 auto 0 auto;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer li{
+  display: inline-block;
+  font-size: 1.05rem;
+  padding: 0 0 .5rem 1rem;
+}
+
+footer p{
+  font-size: .9rem;
+  font-weight: 300;
 }

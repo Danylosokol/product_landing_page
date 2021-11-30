@@ -229,6 +229,7 @@ h1 {
 }
 
 #video {
+  border: 0px;
   border-radius: 2px;
   height: 100%;
   left: 0;
